@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华为商城官网</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body style="overflow-x:hidden">
+      <!--banner and nav-->
+      <div class="header">
+          <div id="top-banner">
+            <a href="#" style="display: block"><img width="100%" src="images/top-adv.jpg" alt=""></a>
+           <!--close图标-->
+             <i id="top-banner-min-close" class="iconfont  icon-guanbi"></i>
+          </div>
+              <ul class="top-min-nav-list">
+                  <li><a href="#">华为官网</a></li>
+                  <li><a href="#">荣耀官网</a></li>
+                  <li><a href="#">花粉俱乐部</a></li>
+                  <li><a href="#">帮助中兴</a></li>
+                  <li><a href="#">V码(优购码)</a></li>
+                  <li><a href="#">Select Region</a></li>
+                  <!--向下的小三角-->
+                  <li><a href="#">更多精彩 <i></i></a></li>
+              </ul>
+          <ul class="top-url" style="overflow: hidden">
+              <li><a href="#">请登录</a></li>
+              <li><a href="#">注册</a></li>
+              <li><a href="#">我的订单</a></li>
+              <li><a href="#"><i></i>购物车</a></li>
+          </ul>
+          <div class="logo">
+              <a href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+          <ul class="top-middle-nav-list">
+              <li><a href="#">华为专区</a></li>
+              <li><a href="#">荣耀专区</a></li>
+              <li><a href="#">HUAWEIP10</a></li>
+              <li><a href="#">荣耀9</a></li>
+              <li><a href="#">麦芒6首销</a></li>
+              <li><a href="#">荣耀换新机</a></li>
+          </ul>
+          <input type="text" placeholder="HUAWEI Mate 10" class="top-search-box">
+          <i id="btn-search" class='iconfont icon-sousuo'></i>
+          <div id="banner-box" >
+          <ul>
+              <li v-for="img in data" class="banner-img"><a href=""><img :src="img.img" alt=""></a></li>
+          </ul>
+              <div class="banner-img-index">
+                  <span class="onbtn"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <!--左侧的导航栏-->
+            <div class="top-left-sider">
+                 <div class="category-info">
+                     <span><a href="javascript:;">手机</a></span>
+                        <p>
+                            <span><a href="#">荣耀</a></span>
+                            <span><a href="#">HUAWEIP系列</a></span>
+                        </p>
+                         <i></i>
+                     <div class="category-info-list-box hide ">
+                         <category-info-list-f1></category-info-list-f1>
+                         <category-info-list-f2></category-info-list-f2>
+                         <category-info-list-f3></category-info-list-f3>
+                     </div>
+                 </div>
+                <div class="category-info">
+                    <span><a href="#">笔记本&平板</a></span>
+                    <p>
+                        <a href="#">平板电脑</a>
+                        <a href="#">笔记本电脑</a>
+                        <i></i>
+                    </p>
+                    <div class="category-info-list-box hide ">
+                    <category-info-list-f1></category-info-list-f1>
+                    <category-info-list-f2></category-info-list-f2>
+                    <category-info-list-f3></category-info-list-f3>
+                    </div>
+                <div class="category-info">
+                    <span><a href="#">穿戴</a></span>
+                    <p>
+                        <a href="#">手环</a>
+                        <a href="#">手表</a>
+                        <i></i>
+                    </p>
+                </div>
+                <div class="category-info">
+                    <span><a href="#">智能家居</a></span>
+                    <p>
+                        <a href="#">子母路由器</a>
+                        <a href="#">电视盒子</a>
+                        <a href="#">路由器</a>
+                        <i></i>
+                    </p>
+                </div>
+                <div class="category-info">
+                    <span><a href="#">通用配件</a></span>
+                    <p>
+                        <a href="#">移动电源</a>
+                        <a href="#">耳机</a>
+                        <a href="#">音响</a>
+                        <i></i>
+                    </p>
+                </div>
+                <div class="category-info">
+                    <span><a href="#">专属配件</a></span>
+                    <p>
+                        <a href="#">保护壳</a>
+                        <a href="#">保护套</a>
+                        <a href="#">贴膜</a>
+                        <i></i>
+                    </p>
+                </div>
+              </div>
+              </div>
+          </div>
+              <div id="middle">
+            <div class="middle-nav">
+                <ul>
+                    <li class="middle-nav-f1">
+                        <span class="logged-in">
+                            <img src="images/logged_in.png" alt="">
+                        </span>
+                        <div class="logged-in-text" style="float:left;margin-left:25px">
+                            <p>欢迎来到华为商城,请 <a href="#">登录</a><br>
+                           还没账号?<a href="">注册</a>即可享受>
+                            </p>
+                            <a href="#" class="a-box">新人福利</a>
+                            <a href="#" class="a-box">会员频道</a>
+                        </div>
+                    </li>
+                    <li class="middle-nav-f2">
+                        <ul class="middle-nav-f2-1">
+                         <li>
+                             <a href="">
+                            <i class="iconfont icon-peijian"></i>
+                            <p><a href="#">优选配件</a></p>
+                             </a>
+                         </li>
+                            <li>
+                                <a href="">
+                                <i class="iconfont icon-shoujichongzhi" ></i>
+                                <p><a href="#">手机充值</a></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <i class="iconfont icon-youhuijuan"></i>
+                                <p><a href="#">会员领劵</a></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <i class="iconfont icon-gexingdingzhishuju"></i>
+                                <p><a href="#">个性定制</a></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <i class="iconfont icon-yijiuhuanxin"></i>
+                                <p><a href="#">以旧换新</a></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                <i class="iconfont icon-qianggoutehui"></i>
+                                <p><a href="#">数码特惠</a></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="middle-nav-f3">
+                        <div class="middle-nav-f3-1">
+                        <i class="iconfont icon-gonggao"></i>
+                        <ul class="category-info-list-f3-adv">
+                            <li><a href="#">爱TA就给他一个智能的家</a></li>
+                            <li><a href="#">荣耀嘉年华 国庆8天乐</a></li>
+                            <li><a href="#">部分旧版本APP强制升级通告</a></li>
+                            <li><a href="#">华为超品日，全场最高优惠580</a></li>
+                            <li><a href="#">购荣耀9抽送鲜花卡</a></li>
+                        </ul>
+                        </div>
+                        <p class="middle-left-nav">
+                        <a href="">
+                            <i class="iconfont icon-renzhengok"></i>
+                            <span>实名认证</span>
+                        </a>
+                        <a href="">
+                            <i class="iconfont icon-logo"></i>
+                            <span>芝麻信用</span>
+                        </a>
+                            <a href="">
+                                <i class="iconfont icon-ma"></i>
+                                <span>优购码</span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+                    <!--产品列表-->
+   <div id="product">
+       <!--top adv -->
+     <div id="f1">
+       <ul>
+           <a href=""><li v-for="img in f1"><img v-bind:src="img.img" alt=""></li></a>
+       </ul>
+  </div>
+    <!--hot 单品-->
+  <div id="f2">
+       <h2 class="product-max-title">热销单品</h2>
+      <a href="#" style="display: block;overflow: hidden;float: left"><img src="images/2-left.jpg" alt=""></a>
+          <div v-for="img in data" class="product-item">
+              <a href="" class="product-item-img"><img :src="img.img" alt="" ></a>
+              <p class="product-title product-com">{{img.title}}</p>
+              <p class="product-fg product-com">{{img.fg}}</p>
+              <p class="product-price product-com">{{img.price}}</p>
+          </div>
+  </div>
+    <!--精品推荐-->
+    <div style="width: 1200px;overflow: hidden">
+     <div id="f3">
+        <h2 class="product-max-title">精品推荐</h2>
+        <div v-for="img in data"  class="product-item">
+            <a href="" class="product-item-img"><img v-bind:src="img.img" alt="" ></a>
+            <p class="product-title product-com">{{img.title}}</p>
+            <p class="product-fg product-com">{{img.fg}}</p>
+            <p class="product-price product-com">{{img.price}}</p>
+        </div>
+    </div>
+    </div>
+       <!--center广告-->
+    <div id="product-adv">
+        <ul>
+        <li class="product-adv-img" v-for="img in adv"><a href=""><img v-bind:src="img.img" alt=""></a></li>
+        </ul>
+    </div>
+    <!--手机-->
+    <div id="f4">
+        <h2 class="product-max-title" style="float: left">手机</h2>
+        <ul class="phone-nav-list">
+            <li><a href="#">荣耀</a></li>
+            <li><a href="#">HUAWEIP系列</a></li>
+            <li><a href="#">荣耀畅玩系列</a></li>
+            <li><a href="#">HUAWEIMate系列</a></li>
+            <li><a href="#">HUAWEI麦芒系列</a></li>
+            <li><a href="#">华为畅享系列</a></li>
+            <li><a href="#">合约机</a></li>
+        </ul>
+        <div style="clear: both"></div>
+        <!--eso-->
+        <a href="#" style="display: block;overflow: hidden;float: left;"><img src="images/4_left.jpg" alt=""></a>
+        <div v-for="img in f4" class="product-item ">
+            <a href="" class="product-item-img"><img v-bind:src="img.img" alt="" ></a>
+            <p class="product-title product-com">{{img.title}}</p>
+            <p class="product-fg product-com">{{img.fg}}</p>
+            <p class="product-price product-com">{{img.price}}</p>
+        </div>
+    </div>
+    <!--笔记本-->
+    <div id='f5'>
+        <h2 class="product-max-title" style="float: left">笔记本</h2>
+        <ul class="phone-nav-list">
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">笔记本电脑</a></li>
+            <li><a href="#">笔记本配件</a></li>
+        </ul>
+        <div style="clear:both"></div>
+        <a href="#" style="display: block;overflow: hidden;float: left"><img src="images/5_left.jpg" alt=""></a>
+        <div v-for="img in f5" class="product-item ">
+            <a href="" class="product-item-img"><img v-bind:src="img.img" alt="" ></a>
+            <p class="product-title product-com">{{img.title}}</p>
+            <p class="product-fg product-com">{{img.fg}}</p>
+            <p class="product-price product-com">{{img.price}}</p>
+        </div>
+    </div>
+    <!--平板-->
+     <div id='f6'>
+        <h2 class="product-max-title" style="float: left">精品平板</h2>
+        <div style="clear:both"></div>
+         <!--eso-->
+        <a href="#" style="display: block;overflow: hidden;float: left"><img src="images/6_01.jpg" alt=""></a>
+        <div v-for="img in f6" class="product-item ">
+            <a href="" class="product-item-img"><img v-bind:src="img.img" alt="" ></a>
+            <p class="product-title product-com">{{img.title}}</p>
+            <p class="product-fg product-com">{{img.fg}}</p>
+            <p class="product-price product-com">{{img.price}}</p>
+        </div>
+    </div>
+    <!--智能穿戴-->
+    <div id='f7'>
+        <h2 class="product-max-title" style="float: left">智能穿戴</h2>
+           <ul class="phone-nav-list">
+            <li><a href="#">手表</a></li>
+            <li><a href="#">手环</a></li>
+        </ul>
+        <div style="clear:both"></div>
+        <!--eso-->
+        <a href="#" style="display: block;overflow: hidden;float: left"><img src="images/7-left.jpg" alt=""></a>
+        <div v-for="img in f7" class="product-item ">
+            <a href="" class="product-item-img"><img v-bind:src="img.img" alt="" ></a>
+            <p class="product-title product-com">{{img.title}}</p>
+            <p class="product-fg product-com">{{img.fg}}</p>
+            <p class="product-price product-com">{{img.price}}</p>
+        </div>
+    </div>
+     <!--<div class="right-nav">-->
+         <!--<ul>-->
+              <!--<li>手机</li>-->
+              <!--<li>笔记本电脑</li>-->
+              <!--<li>精品平板</li>-->
+              <!--<li>智能穿戴</li>-->
+              <!--<li>智能家居</li>-->
+              <!--<li>热销配件</li>-->
+              <!--<li>品牌配件</li>-->
+         <!--</ul>-->
+     <!--</div>-->
+</div>
+       </div> 
+
+      </div>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/vue.js"></script>
+      <script src="js/vue-resource.js"></script>
+      <script src="js/index.js"></script>
+      <script src='js/v-img.js'></script>
+</body>
+</html>
